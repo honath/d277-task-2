@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/images/north-carolina-state-flag.png" />
+    <script defer src="javascript.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-primary">
+        <div class="hero-image hero-nc-generic w-100 h-100">
+            <div class="hero-text pos-relative w-100 h-100">
+                <h1 class="absolute-center">Contact Us</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav class="bg-primary">
+        <ul>
+            <li class="nav-item"><a href="/index.html">Home</a></li>
+            <li class="nav-item"><a href="/cities/raleigh.html">State Capitol</a></li>
+            <li class="nav-item"><a href="/cities/asheville.html">Asheville</a></li>
+            <li class="nav-item"><a href="/cities/charlotte.html">Charlotte</a></li>
+            <li class="nav-item"><a href="/contact-us.html">Contact Us</a></li>
+            <li class="nav-item"><a href="/references.html">References</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <main class="bg-secondary">
+        <section>
+            <h2 class="center center-text">Contact Form</h2>
+            <p class="center-text">Got a question? Have feedback? You can submit your statement with your contact information here!</p>
+            <form id="contact-form">
+                <!-- Row 1 -->
+                <div class="form-row">
+                    <div class="form-input">
+                        <label class="form-label" for="name">First Name:</label>
+                        <input type="text" id="first-name" name="firstName" />
+                    </div>
+
+                    <div class="form-input">
+                        <label class="form-label" for="name">Last Name:</label>
+                        <input type="text" id="last-name" name="lastName" />
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="form-row">
+                    <div class="form-input">
+                        <label class="form-label" for="name">Email:</label>
+                        <input type="text" id="email" name="email" />
+                    </div>
+
+                    <div class="form-input">
+                        <label class="form-label" for="name">Phone Number:</label>
+                        <input type="text" id="phone" name="phoneNumber" />
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="form-row">
+                    <div class="form-input">
+                        <label class="form-label" for="message">Your Message:</label>
+                        <textarea class="w-100" cols="15" rows="5" id="message" name="message"></textarea>
+                    </div>
+                </div>
+
+                <!-- Row 4 -->
+                <div class="form-row">
+                    <button class="submit-btn" id="btnSubmit" type="submit">Submit</button>
+                    <button class="cancel-btn" id="btnClear" type="button">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-primary">
+        <div class="footer-links pos-relative h-100 w-100">
+            <ul class="absolute-center">
+                <li class="nav-item"><a href="/index.html">Home</a></li>
+                <li class="nav-item"><a href="/contact-us.html">Contact Us</a></li>
+                <li class="nav-item"><a href="/references.html">References</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

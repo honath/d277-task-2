@@ -1,0 +1,323 @@
+/* Classes and Variables */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --primary-color: #2F353B; /* Charcoal */
+    --secondary-color: #F5F9FF; /* Off-white */
+    --secondary-color-hover: #d2e5ff;
+    --secondary-color-press: #d9e9ff;
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.pb-1 {
+    padding-bottom: 0.25rem;
+}
+
+.pb-2 {
+    padding-bottom: 0.5rem;
+}
+
+.pb-3 {
+    padding-bottom: 1rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center {
+    margin-inline: auto;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reference-item:not(:last-of-type) {
+    border-bottom: 1px solid grey;
+}
+
+/* Hero Images */
+.hero-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-nc {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/nc-mountains.jpg");
+}
+
+.hero-charlotte {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/charlotte-skyline.jpg");
+}
+
+.hero-asheville {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/asheville-skyline.jpg");
+}
+
+.hero-raleigh {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/raleigh-skyline.jpg");
+}
+
+.hero-nc-generic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/nc-generic.jpg");
+}
+
+/* Link Behavior */
+a {
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+}
+
+.nav-item > a {
+    color: var(--secondary-color);
+}
+
+.nav-item > a:hover {
+    filter: brightness(85%);
+}
+
+.nav-item > a:active {
+    filter: brightness(93%);
+}
+
+/* Table Styling */
+table {
+    width: 50%;
+    margin-block: 1rem;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: 0.85rem;
+    opacity: 75%;
+}
+
+th {
+    text-align: left;
+}
+
+th, td {
+    padding: 3px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Elements */
+header {
+    height: 30vh;
+    max-height: 30% !important;
+    align-items: center;
+}
+
+footer {
+    height: 12vh;
+    font-size: 0.8rem;
+}
+
+main {
+    min-height: 80vh;
+    padding-inline: 7%;
+}
+
+section > p {
+    margin-bottom: 0.5rem;
+}
+
+aside {
+    padding: 0.75rem;
+    margin-inline: 0.5rem;
+    border: 3px solid black;
+    border-radius: 1.8rem;
+}
+
+aside > ol {
+    padding-left: 0.75rem;
+}
+
+header > h1 {
+    text-align: center;
+    margin: 0;
+}
+
+nav {
+    height: 2.8rem;
+}
+
+nav > ul {
+    padding-block: 0.25rem;
+}
+
+nav > ul,
+.footer-links > ul {
+    margin: 0;
+    padding-inline: 5%;
+    max-height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+nav > ul > li,
+.footer-links > ul > li {
+    padding: 0.5rem 1rem;
+}
+
+/* ID Selectors */
+#city-table > tbody > tr {
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    cursor: pointer;
+}
+
+#city-table > tbody > tr:hover {
+    background-color: var(--secondary-color-hover);
+}
+
+/* Form */
+form {
+    padding-top: 3%;
+    max-width: 50%;
+    margin: auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.75rem;
+} 
+
+.form-label {
+    vertical-align: top;
+    display: block;
+}
+
+.form-input {
+    width: 40%;
+}
+
+.form-input:has(textarea) {
+    width: 100%;
+    padding-inline: 5%;
+}
+
+.form-input > input {
+    width: 100%;
+    height: 1.5rem;
+}
+
+.form.form-input > textarea {
+    width: 100% !important;
+}
+
+.submit-btn {
+    background-color: limegreen;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.75rem;
+    transition: 0.25s;
+}
+
+.submit-btn:hover,
+.cancel-btn:hover {
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
+.submit-btn:active,
+.cancel-btn:active {
+    filter: brightness(93%);
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: red;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.75rem;
+    transition: 0.25s;
+}
