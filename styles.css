@@ -143,6 +143,21 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/nc-generic.jpg");
 }
 
+.circle-img {
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-img > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
 /* Link Behavior */
 a {
     transition-duration: 0.25s;
@@ -245,6 +260,11 @@ nav > ul,
 nav > ul > li,
 .footer-links > ul > li {
     padding: 0.5rem 1rem;
+}
+
+img {
+    max-width: 65vw;
+    margin: auto;
 }
 
 /* ID Selectors */
