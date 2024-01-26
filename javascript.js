@@ -77,10 +77,16 @@ else if (fileNameExists && fileName[0].includes("contact")) {
         const formData = {
             firstName: document.querySelector("#first-name").value ?? "",
             lastName: document.querySelector("#last-name").value ?? "",
-            phone: document.querySelector("#phone").value ?? "N/A",
             email: document.querySelector("#email").value ?? "N/A",
+            validateEmail: document.querySelector("#validate-email").value ?? "N/A",
             message: document.querySelector("#message").value ?? ""
         };
+
+        if (!(formData.validateEmail === formData.email)) {
+            window.alert("Emails must match.");
+
+            return;
+        }
 
         console.log(formData.message);
 
